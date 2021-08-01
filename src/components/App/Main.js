@@ -104,12 +104,12 @@ export default class Main extends Component {
   loadSample = () => {
     this.setState({
       PI: {
-        first_name: 'NGUYEN',
-        last_name: 'THANH LUAN',
+        first_name: 'Nguyen',
+        last_name: 'Thanh Luan',
         email: 'thanhluannguyenxyz@gmail.com',
         photo: 'sample',
-        phone_number: '080-4692-4098',
-        address: '福岡県福岡市早良区石釜40-15',
+        phone_number: '090-4444-5678',
+        address: '福岡県福岡市＊＊＊＊＊１２-３４',
         description:
           'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illum culpa porro doloremque debitis quas dolorum necessitatibus sint tenetur fugiat ea, aspernatur, eligendi odit ipsum, recusandae nemo dolorem nostrum adipisci!',
       },
@@ -127,7 +127,7 @@ export default class Main extends Component {
       PEs: [
         {
           key: uniqid(),
-          company_name: 'Nishi Nihon Business Cooperative',
+          company_name: 'Kita Nippon Business Cooperative',
           city: 'Fukuoka',
           position_title: 'Support Division Member',
           main_tasks: 'Translation, Interpretation',
@@ -136,9 +136,9 @@ export default class Main extends Component {
         },
         {
           key: uniqid(),
-          company_name: 'Construction Cooperative',
+          company_name: 'Power Cooperative',
           city: 'Fukuoka',
-          position_title: 'Support Member',
+          position_title: 'Translator/Interpretor',
           main_tasks: 'Translation, Interpretation',
           from: '2020-04',
           to: '2021-08',

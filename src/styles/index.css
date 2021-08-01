@@ -184,9 +184,16 @@ body {
 
 .App .Main .Form .Section .custom-file-upload label {
   border: 1px solid #ccc;
+  border-radius: var(--bdr-rad-1);
   display: inline-block;
   padding: 0.7rem 0.9rem;
+  background-color: #fff;
   cursor: pointer;
+}
+
+.App .Main .Form .Section .custom-file-upload label:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
 }
 
 .App .Main .Form .Section .custom-file-upload label i {
@@ -228,7 +235,7 @@ body {
 }
 
 .App .Main .Form .Section .Input textarea {
-  height: 4rem;
+  height: 6rem;
   resize: none;
 }
 
@@ -318,6 +325,13 @@ body {
   font-weight: 400;
 }
 
+@media print {
+  ._Preview {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+
 ._header {
   background-color: var(--bg-clr-4);
   height: 30mm;
@@ -342,12 +356,19 @@ body {
 ._main,
 ._aside {
   height: 267mm;
-  padding: 10px;
   display: inline-block;
   vertical-align: top;
 }
 
+@media print {
+  ._main,
+  ._aside {
+    padding: 10px;
+  }
+}
+
 ._main {
+  padding: 12px;
   background-color: var(--bg-clr-3);
   width: 160mm;
 }
@@ -376,6 +397,7 @@ body {
 
 ._aside {
   width: 50mm;
+  padding: 11px;
   background-color: var(--bg-clr-5);
   word-break: break-all;
 }
