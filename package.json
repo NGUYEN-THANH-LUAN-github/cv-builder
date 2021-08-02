@@ -1,6 +1,6 @@
 {
     "homepage": "https://nguyen-thanh-luan-github.github.io/cv-builder/",
-    "name": "task-app",
+    "name": "cv-builder",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
