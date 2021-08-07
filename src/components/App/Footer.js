@@ -7,7 +7,7 @@ export default function Footer() {
         made by n.t.luan
         <a
           target='_blank'
-          href='https://github.com/NGUYEN-THANH-LUAN-github/task-app'
+          href='https://github.com/NGUYEN-THANH-LUAN-github/cv-builder'
           rel='noreferrer'
         >
           <i className='fab fa-github text'></i>
