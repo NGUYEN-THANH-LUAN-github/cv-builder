@@ -89,7 +89,7 @@ export default class Preview extends Component {
                   ? sample
                   : PI.photo
               }
-              alt=''
+              alt='profile pic'
             />
             <h4>Personal Details</h4>
             <div>
