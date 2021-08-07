@@ -133,12 +133,12 @@ body {
                     font-size: 1.6rem;
                 }
                 .Input-name {
-                    @include grouping-Inputs()
+                    @include grouping-Inputs();
                 }
                 .Input-group {
                     margin-top: 25px;
                     .Input-time {
-                        @include grouping-Inputs()
+                        @include grouping-Inputs();
                     }
                 }
                 .custom-file-upload {
