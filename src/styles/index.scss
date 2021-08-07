@@ -83,7 +83,7 @@ body {
     min-height: 100vh;
     position: relative;
     .Header {
-        background-color: var(--bg-clr-1);
+        background-color: green;
         color: var(--color-1);
         padding: 1rem 1.5rem;
         position: absolute;
@@ -133,12 +133,12 @@ body {
                     font-size: 1.6rem;
                 }
                 .Input-name {
-                    @include grouping-Inputs()
+                    @include grouping-Inputs();
                 }
                 .Input-group {
                     margin-top: 25px;
                     .Input-time {
-                        @include grouping-Inputs()
+                        @include grouping-Inputs();
                     }
                 }
                 .custom-file-upload {

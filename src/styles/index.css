@@ -68,7 +68,7 @@ body {
 }
 
 .App .Header {
-  background-color: var(--bg-clr-1);
+  background-color: green;
   color: var(--color-1);
   padding: 1rem 1.5rem;
   position: absolute;
