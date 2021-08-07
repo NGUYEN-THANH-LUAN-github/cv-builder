@@ -83,7 +83,7 @@ body {
     min-height: 100vh;
     position: relative;
     .Header {
-        background-color: green;
+        background-color: var(--bg-clr-1);
         color: var(--color-1);
         padding: 1rem 1.5rem;
         position: absolute;

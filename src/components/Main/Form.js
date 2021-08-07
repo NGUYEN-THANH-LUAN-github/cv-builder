@@ -21,10 +21,11 @@ export default class Form extends Component {
       addPE,
       updatePE,
       deletePE,
+      state,
     } = this.props
     return (
       <form className='Form'>
-        <Personal PI={PI} updatePI={updatePI} uploadPhoto={uploadPhoto}/>
+        <Personal PI={PI} updatePI={updatePI} uploadPhoto={uploadPhoto} />
         <Education
           EHs={EHs}
           addEH={addEH}
@@ -37,9 +38,9 @@ export default class Form extends Component {
           updatePE={updatePE}
           deletePE={deletePE}
         />
-        <ButtonPDF state={this.props.state} />
-        <Button name='Load Example' color='#c25c0e' handleClick={loadSample}/>
-        <Button name='Reset' color='#b3211e' handleClick={reset}/>
+        <ButtonPDF state={state} />
+        <Button name='Load Example' color='#c25c0e' handleClick={loadSample} />
+        <Button name='Reset' color='#b3211e' handleClick={reset} />
       </form>
     )
   }

@@ -1,7 +1,7 @@
 const uniqid = require('uniqid')
 
 const emptyCV = {
-  PI: {
+  PI: () => ({
     first_name: '',
     last_name: '',
     photo: null,
@@ -9,8 +9,8 @@ const emptyCV = {
     phone_number: '',
     address: '',
     description: '',
-  },
-  EH: {
+  }),
+  EH: () => ({
     key: uniqid(),
     school_name: '',
     city: '',
@@ -18,8 +18,8 @@ const emptyCV = {
     major: '',
     from: '',
     to: '',
-  },
-  PE: {
+  }),
+  PE: () => ({
     key: uniqid(),
     company_name: '',
     city: '',
@@ -27,7 +27,7 @@ const emptyCV = {
     main_tasks: '',
     from: '',
     to: '',
-  },
+  }),
 }
 
 export default emptyCV

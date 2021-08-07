@@ -6,14 +6,24 @@ export default class Personal extends Component {
     return (
       <div className='Section'>
         <h3>Personal Information</h3>
-        <div className="Input-name">
+        <div className='Input-name'>
           <div className='Input'>
             <label>First Name</label>
-            <input type='text' id='first_name' value={PI.first_name} onInput={updatePI} />
+            <input
+              type='text'
+              id='first_name'
+              value={PI.first_name}
+              onInput={updatePI}
+            />
           </div>
           <div className='Input'>
             <label>Last Name</label>
-            <input type='text' id='last_name' value={PI.last_name} onInput={updatePI} />
+            <input
+              type='text'
+              id='last_name'
+              value={PI.last_name}
+              onInput={updatePI}
+            />
           </div>
         </div>
 
@@ -33,15 +43,32 @@ export default class Personal extends Component {
         </div>
         <div className='Input'>
           <label>Address</label>
-          <input type='text' id='address' value={PI.address} onInput={updatePI} />
+          <input
+            type='text'
+            id='address'
+            value={PI.address}
+            onInput={updatePI}
+          />
         </div>
         <div className='Input'>
           <label>Description</label>
-          <textarea type='text' id='description' value={PI.description} onInput={updatePI} />
+          <textarea
+            type='text'
+            id='description'
+            value={PI.description}
+            onInput={updatePI}
+          />
         </div>
-        <div className="custom-file-upload">
-          <label htmlFor="photo">Upload Photo <i className="fas fa-upload"></i></label>
-          <input type="file" id="photo" accept="image/*" onChange={uploadPhoto} />
+        <div className='custom-file-upload'>
+          <label htmlFor='photo'>
+            Upload Photo <i className='fas fa-upload'></i>
+          </label>
+          <input
+            type='file'
+            id='photo'
+            accept='image/*'
+            onChange={uploadPhoto}
+          />
         </div>
       </div>
     )

@@ -25,7 +25,7 @@ const sampleCV = {
   PEs: [
     {
       key: uniqid(),
-      company_name: 'Kita Nippon Business Cooperative',
+      company_name: 'Kita Nippon Business Coop',
       city: 'Fukuoka',
       position_title: 'Support Division Member',
       main_tasks: 'Translation, Interpretation',
@@ -34,7 +34,7 @@ const sampleCV = {
     },
     {
       key: uniqid(),
-      company_name: 'Power Cooperative',
+      company_name: 'Power Coop',
       city: 'Fukuoka',
       position_title: 'Translator/Interpretor',
       main_tasks: 'Translation, Interpretation',

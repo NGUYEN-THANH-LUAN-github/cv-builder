@@ -6,12 +6,12 @@ import '../../styles/index.css'
 
 export default class Preview extends Component {
   render() {
-    const format = (date) => {
+    const format = date => {
       if (date !== '') return formatMonth(date)
       return ''
     }
     const { PI, EHs, PEs } = this.props.state
-    const EH_contents = EHs.map((EH) => (
+    const EH_contents = EHs.map(EH => (
       <div className='input' key={EH.key}>
         <strong className='time'>
           <span className='from'>{format(EH.from)}</span>
@@ -23,12 +23,16 @@ export default class Preview extends Component {
             <strong className='name'>{EH.school_name}</strong>
             <strong className='city'>{EH.city && `, ${EH.city}`}</strong>
           </div>
-          <div className='degree'>Degree: {EH.degree}</div>
-          <div className='major'>Major: {EH.major}</div>
+          <div className='degree'>
+            <strong>Degree</strong>: {EH.degree}
+          </div>
+          <div className='major'>
+            <strong>Major</strong>: {EH.major}
+          </div>
         </div>
       </div>
     ))
-    const PE_contents = PEs.map((PE) => (
+    const PE_contents = PEs.map(PE => (
       <div className='input' key={PE.key}>
         <strong className='time'>
           <span className='from'>{format(PE.from)}</span>
@@ -38,10 +42,14 @@ export default class Preview extends Component {
         <div className='details'>
           <strong className='position'>{PE.position_title}</strong>
           <div className='company'>
-            <span className='name'>{PE.company_name}</span>
+            <span className='name'>
+              <strong>Company</strong>: {PE.company_name}
+            </span>
             <span className='city'>{PE.city && `, ${PE.city}`}</span>
           </div>
-          <div className='tasks'>Tasks: {PE.main_tasks}</div>
+          <div className='tasks'>
+            <strong>Tasks</strong>: {PE.main_tasks}
+          </div>
         </div>
       </div>
     ))
@@ -73,8 +81,16 @@ export default class Preview extends Component {
           </div>
 
           <div className='_aside'>
-            <img src={PI.photo === null ? emptyAvatar :
-              PI.photo === "sample" ? sample : PI.photo} alt='' />
+            <img
+              src={
+                PI.photo === null
+                  ? emptyAvatar
+                  : PI.photo === 'sample'
+                  ? sample
+                  : PI.photo
+              }
+              alt=''
+            />
             <h4>Personal Details</h4>
             <div>
               <h5>Address</h5>

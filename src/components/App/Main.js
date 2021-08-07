@@ -2,28 +2,27 @@ import React, { useState } from 'react'
 import Form from '../Main/Form'
 import Preview from '../Main/Preview'
 import formatPhoneNumber from '../../modules/formatPhoneNumber'
-import sampleCV from '../assets/sampleCV'
 import emptyCV from '../assets/emptyCV'
-// import emptyAvatar from '../assets/empty_avatar.png'
+import sampleCV from '../assets/sampleCV'
 
 export default function Main() {
-  const [PI, setPI] = useState(emptyCV.PI)
+  const [PI, setPI] = useState(emptyCV.PI())
   const [EHs, setEHs] = useState([])
   const [PEs, setPEs] = useState([])
 
   const updatePI = e => {
-    const obj = {}
     const { id, value } = e.target
-    if (id === 'phone_number') obj[id] = formatPhoneNumber(value)
-    else obj[id] = value
-    setPI(Object.assign(PI, obj))
+    setPI(prevState => ({
+      ...prevState,
+      [id]: id === 'phone_number' ? formatPhoneNumber(value) : value,
+    }))
   }
 
   const addEH = () => {
-    setEHs(EHs.concat(emptyCV.EH))
+    setEHs([...EHs, emptyCV.EH()])
   }
   const addPE = () => {
-    setPEs(PEs.concat(emptyCV.PE))
+    setPEs([...PEs, emptyCV.PE()])
   }
 
   const updateEH = e => {
@@ -72,13 +71,10 @@ export default function Main() {
   }
 
   const uploadPhoto = e => {
-    setPI(
-      Object.assign(PI, {
-        photo: URL.createObjectURL(e.target.files[0]),
-      })
-    )
-    console.log(e.target.files[0])
-    console.log(URL.createObjectURL(e.target.files[0]))
+    setPI(prevState => ({
+      ...prevState,
+      photo: URL.createObjectURL(e.target.files[0]),
+    }))
   }
 
   return (
