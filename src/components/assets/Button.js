@@ -8,7 +8,8 @@ export default class Button extends Component {
         type='button'
         style={{ backgroundColor: color }}
         onClick={handleClick}
-        data-key={data_key}>
+        data-key={data_key}
+      >
         {name}
       </button>
     )

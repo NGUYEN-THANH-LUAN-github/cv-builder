@@ -15,6 +15,7 @@ export default class Form extends Component {
       updatePI,
       EHs,
       addEH,
+
       updateEH,
       deleteEH,
       PEs,
