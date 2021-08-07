@@ -93,7 +93,6 @@ export default function Main() {
         addPE={addPE}
         updatePE={updatePE}
         deletePE={deletePE}
-        state={{ PI: PI, EHs: EHs, PEs: PEs }}
       />
       <Preview state={{ PI: PI, EHs: EHs, PEs: PEs }} />
     </main>

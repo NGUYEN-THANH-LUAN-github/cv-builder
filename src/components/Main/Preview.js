@@ -21,7 +21,7 @@ export default class Preview extends Component {
         <div className='details'>
           <div className='school'>
             <strong className='name'>{EH.school_name}</strong>
-            <strong className='city'>{EH.city && `, ${EH.city}`}</strong>
+            <span className='city'>{EH.city && `, ${EH.city}`}</span>
           </div>
           <div className='degree'>
             <strong>Degree</strong>: {EH.degree}
