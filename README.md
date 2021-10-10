@@ -1,6 +1,6 @@
 # 🌱 cv builder
 
-a project from The Odin Project
+a React project from The Odin Project
 
 👉 [Live Demo](https://thanh-luan-nguyen.github.io/cv-builder/)
 
